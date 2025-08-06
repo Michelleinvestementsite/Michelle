@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MICHELLE RENEE SARAH</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free Website Template" name="keywords" />
+    <meta content="Free Website Template" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Libraries -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- EmailJS SDK v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      // Initialize with your EmailJS public key
+      emailjs.init({ publicKey: "FcvKnh-bA3P56x0Pr" });
+
+      window.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Set the current date/time
+            document.getElementById("message-time").value =
+              new Date().toLocaleString();
+
+            emailjs.sendForm("service_94qgkxf", "template_xzlvtat", this).then(
+              () => {
+                alert("✅ Message sent successfully!");
+                this.reset();
+              },
+              (error) => {
+                console.error("❌ Failed to send:", error);
+                alert("❌ Failed to send message. Please try again.");
+              }
+            );
+          });
+      });
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">MICHELLE RENEE SARAH</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#experience" class="nav-item nav-link">Experience</a>
+            <a href="#services" class="nav-item nav-link">Services</a>
+            <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+            <a href="#review" class="nav-item nav-link">Testimonials</a>
+            <a href="#faq" class="nav-item nav-link">FAQ</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- Hero Start -->
+    <div class="hero" id="home">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1>MICHELLE RENEE SARAH</h1>
+                <p>
+                  I’m a Licensed General Securities Representative Committed to
+                  Your Financial Success
+                </p>
+              </div>
+              <div class="hero-btn">
+                <a class="btn" href="#contact">Contact Me</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 d-none d-md-block">
+            <div class="hero-image">
+              <img src="img/Image_3.jpg" alt="Hero Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Service Start -->
+    <div class="service" id="service">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn mb-5"
+          data-wow-delay="0.1s"
+        >
+          <p class="" style="font-size: 12px">
+            Unlock a full suite of professional-grade tools and insights crafted
+            to elevate your trading journey, empowering you to spot market
+            trends and execute proven strategies with confidence and clarity.
+          </p>
+          <h2 style="color: #ef233c">
+            No Market Experience?<br />
+            I’ll Help You Build with Confidence.
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="service-item">
+              <div class="service-text">
+                <p>
+                  Your capital is your tool — not something to gamble. We teach
+                  you how to protect it, grow it, and deploy it where it matters
+                  most based on data, not hype.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-item">
+              <div class="service-text">
+                <p>
+                  Most people enter the market with emotion instead of strategy
+                  — and that’s why they lose money. We help you shift from
+                  guessing to calculating, using a system backed by logic,
+                  trends, and time-tested insights.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+              <div class="service-text">
+                <p>
+                  It’s not just about what to buy — it’s knowing when to buy and
+                  when to exit. With the right timing tools and portfolio
+                  rotation models, we position you to move with the market, not
+                  against it.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+              <div class="service-text">
+                <p>
+                  You don’t need to chase every trade. We teach you how to
+                  identify high-probability setups and wait patiently, so you're
+                  not glued to charts all day or reacting out of fear.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+              <div class="service-text">
+                <p>
+                  Our proven framework helps you filter the noise, stay
+                  disciplined, and stick to a strategy that works — even in
+                  volatile markets. It’s structure over stress, clarity over
+                  confusion.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+              <div class="service-text">
+                <p>
+                  Through private mentoring and group sessions, we break down
+                  complex market behaviors into simple, actionable steps.
+                  Whether you're trading part-time or full-time, you’ll have a
+                  clear edge.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="btn mx-auto" href="#contact">Tell me More...</a>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- About Start -->
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-img">
+              <img src="img/Image_1.jpg" alt="Image" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <div class="section-header text-left">
+                <p>MICHELLE RENEE SARAH</p>
+                <h2>
+                  Professional Investment Insights Backed by a Decade of Market
+                  Experience
+                </h2>
+              </div>
+              <div class="about-text">
+                <p>
+                  I’m a licensed General Securities Representative with over a
+                  decade of experience in the financial services industry,
+                  working with a respected U.S. firm. My core investment
+                  philosophy blends deep market knowledge with personalized
+                  strategy — focused primarily on large-cap and mega-cap
+                  equities, alongside select major cryptocurrencies.<br /><br />
+                  I structure my portfolio with precision: 60% allocated to
+                  short-term positions that capitalize on market momentum, while
+                  the remaining 40% is dedicated to long- and mid-term
+                  investments rooted in strong fundamentals and growth
+                  potential.<br /><br />
+                  Diversification is key. My portfolio spans multiple sectors,
+                  with a particular emphasis on companies that consistently
+                  increase their dividend payouts — a marker of strength and
+                  shareholder commitment. Every decision is backed by technical
+                  analysis, risk discipline, and a commitment to sustainable
+                  returns.<br /><br />
+                  My goal is clear: outperform the S&P 500 year after year,
+                  while helping others understand and navigate their own “Inner
+                  Market” with confidence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Experience Start -->
+    <div class="experience" id="experience">
+      <div class="container">
+        <header
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <h2>Experience</h2>
+        </header>
+        <div class="timeline">
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">11/30/2020 - 1/28/2022</div>
+              <h2>MORGAN STANLEY (#149777)</h2>
+            </div>
+          </div>
+          <div
+            class="timeline-item right wow slideInRight"
+            data-wow-delay="0.1s"
+          >
+            <div class="timeline-text">
+              <div class="timeline-date">07/01/2016 - 08/04/2021</div>
+              <h2>
+                SCHWAB PRIVATE CLIENT INVESTMENT ADVISORY, INC. (CRD#:159035)
+              </h2>
+            </div>
+          </div>
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">01/26/2012 - 03/23/2012</div>
+              <h2>CHARLES SCHWAB & CO., INC. (CRD#:5393)</h2>
+            </div>
+          </div>
+          <div
+            class="timeline-item right wow slideInRight"
+            data-wow-delay="0.1s"
+          >
+            <div class="timeline-text">
+              <div class="timeline-date">10/25/2007 - 12/31/2011</div>
+              <h2>CHARLES SCHWAB & CO., INC. (CRD#:5393)</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Job Experience End -->
+
+    <!-- Experience Start -->
+    <div class="experience" id="experience">
+      <div class="container">
+        <header
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <h2>Examination</h2>
+        </header>
+
+        <h4 class="timeline-mini">PRINCIPAL/SUPERVISORY EXAMS</h4>
+        <div class="timeline">
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">10/12/2017</div>
+              <h2>
+                Series 10 - General Securities Sales Supervisor - General Module
+                Examination
+              </h2>
+            </div>
+          </div>
+          <div
+            class="timeline-item right wow slideInRight"
+            data-wow-delay="0.1s"
+          >
+            <div class="timeline-text">
+              <div class="timeline-date">02/09/2017</div>
+              <h2>
+                Series 9 - General Securities Sales Supervisor - Options Module
+                Examination
+              </h2>
+            </div>
+          </div>
+          <h4 class="timeline-mini pl-4">STATE SECURITY LAW EXAM</h4>
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">10/15/2007</div>
+              <h2>Series 66 - Uniform Combined State Law Examination</h2>
+            </div>
+          </div>
+          <div
+            class="timeline-item right wow slideInRight"
+            data-wow-delay="0.1s"
+          >
+            <div class="timeline-text">
+              <div class="timeline-date">09/02/2004</div>
+              <h2>
+                Series 63 - Uniform Securities Agent State Law Examination
+              </h2>
+            </div>
+          </div>
+          <h4 class="timeline-mini pl-4">GENERAL INDUSTRY/PRODUCTS EXAM</h4>
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">10/01/2018</div>
+              <h2>SIE - Securities Industry Essentials Examination</h2>
+            </div>
+          </div>
+          <div
+            class="timeline-item right wow slideInRight"
+            data-wow-delay="0.1s"
+          >
+            <div class="timeline-text">
+              <div class="timeline-date">02/10/2004</div>
+              <h2>Series 7 - General Securities Representative Examination</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Job Experience End -->
+
+    <!-- services Start -->
+    <div class="team" id="services">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>Services</p>
+          <h2>
+            Ready to Stop Guessing <br />
+            and Start Growing?
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="team-item">
+              <div class="team-img mb-4">
+                <i class="fas fa-handshake fa-2x" style="color: #ef233c"></i>
+              </div>
+              <div class="team-text">
+                <h2>Investment Advisory</h2>
+                <p>
+                  I deliver tailored investment solutions that align with your
+                  specific financial goals, risk tolerance, and time horizon.
+                  Whether you're looking to build a stock portfolio, explore
+                  mutual funds, or diversify into bonds, every recommendation is
+                  backed by disciplined research and strategic thinking. The
+                  focus is simple: make informed decisions, optimize asset
+                  allocation, and grow wealth sustainably over time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="team-item">
+              <div class="team-img mb-4">
+                <i
+                  class="fas fa-search-dollar fa-2x"
+                  style="color: #ef233c"
+                ></i>
+              </div>
+              <div class="team-text">
+                <h2>Fundamental Analysis</h2>
+                <p>
+                  Understanding the true value of an asset is essential. My
+                  fundamental research dives deep into a company’s financial
+                  health, competitive edge, leadership, and macroeconomic
+                  context. I focus on identifying high-quality opportunities —
+                  like dividend growers and industry leaders — with a long-term
+                  vision rooted in performance, not hype.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="team-item">
+              <div class="team-img mb-4">
+                <i class="fas fa-chart-line fa-2x" style="color: #ef233c"></i>
+              </div>
+              <div class="team-text">
+                <h2>Portfolio Management</h2>
+                <p>
+                  My portfolio management approach is designed to help your
+                  capital work smarter — compounding over time while minimizing
+                  unnecessary risk. Through active monitoring of market
+                  conditions and performance metrics, I make data-driven
+                  adjustments that keep your portfolio aligned with your
+                  long-term objectives. The goal is not just growth, but
+                  consistent, risk-aware growth.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="team-item">
+              <div class="team-img mb-4">
+                <i class="fas fa-user-clock fa-2x" style="color: #ef233c"></i>
+              </div>
+              <div class="team-text">
+                <h2>Retirement Planning</h2>
+                <p>
+                  Step into retirement with clarity, confidence, and control. I
+                  help you design a comprehensive plan that blends traditional
+                  pension assets with modern income strategies — including
+                  on-chain solutions for flexibility and liquidity. From
+                  projected income streams to tax-efficient withdrawals,
+                  everything is mapped to give you peace of mind in your
+                  post-career life.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="team-item">
+              <div class="team-img mb-4">
+                <i
+                  class="fas fa-chalkboard-teacher fa-2x"
+                  style="color: #ef233c"
+                ></i>
+              </div>
+              <div class="team-text">
+                <h2>Financial Education</h2>
+                <p>
+                  I believe financial literacy should be a cornerstone of every
+                  investor’s journey. Through structured workshops, one-on-one
+                  coaching, and live market breakdowns, I make trading and
+                  investment concepts practical and actionable. Whether you're a
+                  beginner or looking to refine your edge, my goal is to help
+                  you build lasting clarity around your financial decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="team-item">
+              <div class="team-img mb-4">
+                <i
+                  class="fas fa-project-diagram fa-2x"
+                  style="color: #ef233c"
+                ></i>
+              </div>
+              <div class="team-text">
+                <h2>Technical Analysis</h2>
+                <p>
+                  I provide actionable technical analysis to help you uncover
+                  opportunities in short- to medium-term market movements. Using
+                  tools like price action, volume patterns, and key levels of
+                  support and resistance, I help you identify entries and exits
+                  across markets — including equities, forex, and crypto — with
+                  precision and confidence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services End -->
+
+    <!-- Portfolio Start -->
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>Portfolio</p>
+          <h2>Performance Report</h2>
+        </div>
+        <div class="banner wow zoomIn" data-wow-delay="0.1s">
+          <div class="container">
+            <div class="section-header text-center"></div>
+            <div class="container banner-text">
+              <p>
+                I believe performance should speak for itself. Ther section
+                provides full access to my portfolio performance, detailed
+                monthly reports, and a look at the experience I’ve built over
+                the last five years in the financial industry.
+              </p>
+              <div class="">
+                <div class="performance-tab">
+                  <div class="btn">
+                    <div class="portfolio-text">
+                      <p style="color: rgb(71, 71, 71)">Total AUM</p>
+                      <h3 style="color: #414141">$USD217M+</h3>
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <div class="portfolio-text">
+                      <p style="color: rgb(71, 71, 71)">Overall Return</p>
+                      <h3 style="color: #414141">+728.41%</h3>
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <div class="portfolio-text">
+                      <p style="color: rgb(71, 71, 71)">Risk Score</p>
+                      <h3 style="color: #414141">4 / 10</h3>
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <div class="portfolio-text">
+                      <p style="color: rgb(71, 71, 71)">Maximum DD</p>
+                      <h3 style="color: #414141">-52.24%</h3>
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <div class="portfolio-text">
+                      <p style="color: rgb(71, 71, 71)">Avg Annual Return</p>
+                      <h3 style="color: #414141">76.01%</h3>
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <div class="portfolio-text">
+                      <p style="color: rgb(71, 71, 71)">Sharpe Ratio</p>
+                      <h3 style="color: #414141">0.66%</h3>
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <div class="portfolio-text">
+                      <p style="color: rgb(71, 71, 71)">Avg Monthly Return</p>
+                      <h3 style="color: #414141">8.28%</h3>
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <div class="portfolio-text">
+                      <p style="color: rgb(71, 71, 71)">
+                        Standard<br />
+                        Deviation Monthly
+                      </p>
+                      <h3 style="color: #414141">15.70%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Testimonial Start -->
+    <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+      <div class="container">
+        <div class="testimonial-icon">
+          <i class="fa fa-quote-left"></i>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+          <div class="testimonial-item">
+            <div class="testimonial-text">
+              <p>
+                I never thought I could understand trading until I met MICHELLE
+                RENEE SARAH. her ability to simplify market behavior and explain
+                strategies gave me confidence I didn’t know I had. I’m now
+                seeing consistent results and actually enjoy analyzing charts.
+              </p>
+              <h3>Jennifer Lee</h3>
+              <h4>Austin, Texas</h4>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-text">
+              <p>
+                MICHELLE RENEE SARAH helped me build a portfolio that reflects
+                both my financial goals and my risk comfort. What stood out most
+                was her transparency — I always knew why we were making certain
+                moves, and that helped me stay grounded even during volatility.
+              </p>
+              <h3>Michael D.</h3>
+              <h4>Atlanta, Georgia, USA</h4>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-text">
+              <p>
+                As someone who was used to long-term investing only, MICHELLE
+                RENEE SARAH opened my eyes to how short-term plays can fit into
+                a broader strategy. I appreciate her patience and attention to
+                detail. He’s not just managing money — he’s building investors.
+              </p>
+              <h3>Lilian C.</h3>
+              <h4>Auckland, New Zealand</h4>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-text">
+              <p>
+                Before working with MICHELLE RENEE SARAH, I felt overwhelmed by
+                the noise in the market. He broke everything down in a way that
+                finally made sense. Her methods are clear, repeatable, and
+                actually work. I'm not just investing — I'm investing with
+                purpose now.
+              </p>
+              <h3>Eric M.</h3>
+              <h4>Denver, Colorado, USA</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- FAQ Start -->
+    <div class="team" id="faq">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>FAQs</p>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="team-item">
+              <div class="team-text">
+                <h2>Do I need any prior trading experience to get started?</h2>
+
+                <p>
+                  Nope, We don’t leave you to figure it out alone. Support and
+                  accountability are built into the program from day one.
+                  Whether you're just starting or you've been trading for a
+                  while without consistency, we simplify the process. You’ll
+                  have access to one-on-one coaching, live sessions, and direct
+                  feedback from me and my team.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="team-item">
+              <div class="team-text">
+                <h2>What makes your trading approach different from others?</h2>
+
+                <p>
+                  I don’t believe in cookie-cutter strategies or endless theory.
+                  We focus on actionable techniques grounded in how real markets
+                  work, especially how institutions drive price movement. My
+                  team and I teach you to recognize those patterns and position
+                  yourself accordingly. It’s not just about trading, it’s about
+                  thinking like a pro.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="team-item">
+              <div class="team-text">
+                <h2>Is this long-term investing or active trading?</h2>
+
+                <p>
+                  We’re in the middle of what I call active wealth building.
+                  It’s not day trading, but it’s definitely not buy and hold
+                  either. We help you shift your capital based on real time
+                  market conditions, so you're always aligned with opportunity
+                  while minimizing downside.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-item">
+              <div class="team-text">
+                <h2>Do you help with risk management?</h2>
+                <p>
+                  Absolutely. Risk management is the foundation of what I teach.
+                  We cover how to size your positions properly, set realistic
+                  stop levels, and rotate out of risky assets before things turn
+                  ugly. You’ll learn how to protect your capital like a pro.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Contact Start -->
+    <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+              <div class="contact-form">
+                <form id="contact-form">
+                  <div class="control-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="control-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="control-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="title"
+                      placeholder="Subject of the message"
+                      required
+                    />
+                  </div>
+                  <input type="hidden" name="time" id="message-time" />
+                  <div class="control-group">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div>
+                    <button class="btn" type="submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="footer-info">
+            <h2>MICHELLE RENEE SARAH</h2>
+            <div class="footer-menu">
+              <p>+1 345 678 890</p>
+            </div>
+            <div class="footer-menu">
+              <p>contact@michellereneesarah.com</p>
+            </div>
+            <div class="footer-social">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="container copyright">
+          <p>&copy; <a href="#">MICHELLE RENEE SARAH</a>, All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+      <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
